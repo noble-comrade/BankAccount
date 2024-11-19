@@ -1,0 +1,18 @@
+string pathToRead = "C:\\Users\\prdb\\Desktop\\SomeProject321\\INPUT.txt";
+StreamReader Reader = new StreamReader(pathToRead);
+string pathToWrite = "C:\\Users\\prdb\\Desktop\\SomeProject321\\OUTPUT.txt";
+StreamWriter Writer = new StreamWriter(pathToWrite);
+
+int n = 69;
+int k = 3;
+int t = n / k; // 23 -- два десятка и три единицы
+int n2 = 73;
+t = n2/k;
+
+List<string> List = [];
+string[] start = { "69", "3" };
+int n = Convert.ToInt32(start[0]);
+int k = Convert.ToInt32(start[1]);
+List.Add($"{n} = ");
+int nn = n % k;
+n = n / k;
